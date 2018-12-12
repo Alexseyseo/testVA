@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MIRONI - производство и оптовая продажа женской одежды</title>
+    <link rel="preload" href="fonts/futuraPTBold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/futuraPTDemi.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/futuraPTMedium.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotoBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
@@ -13,11 +19,11 @@
 
       <div class="main-nav">
         <ul class="main-nav__list site-list">
-          <li><a href="news-item.html">Новинки</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="sale.html">Sale</a></li>
-          <li><a href="terms-of-cooperation.html">Условия сотрудничества</a></li>
-          <li><a href="shipping-payment.html">Доставка и оплата</a></li>
+          <li><a href="#news-item">Новинки</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#sale">Sale</a></li>
+          <li><a href="#terms-of-cooperation">Условия сотрудничества</a></li>
+          <li><a href="#shipping-payment">Доставка и оплата</a></li>
         </ul>
 
         <div class="contacts">
@@ -61,16 +67,25 @@
             <a href="news.html">Перейти к хитам продаж »</a>
           </div>
           <div class="offer-item__image">
-            <img src="img/girl-1.png" alt="Девушка в новом платье" width="325" height="368">
+            <picture>
+              <source type="image/webp" srcset="img/girl-1.webp 1x, img/girl-1@2x.webp 2x">
+              <img src="img/girl-1.png" srcset="img/girl-1@2x.png 2x" alt="Девушка в новом платье" width="325" height="368">
+            </picture>
           </div>
         </div>
         <div class="offers__item offer-item offer-item--narrow">
-          <img src="img/clothes-1.png" alt="Образец одежды из капсульной коллекции" width="370" height="370">
+          <picture>
+            <source type="image/webp" srcset="img/clothes-1.webp 1x, img/clothes-1@2x.webp 2x">
+            <img src="img/clothes-1.png" srcset="img/clothes-1@2x.png 2x" alt="Образец одежды из капсульной коллекции" width="370" height="370">
+          </picture>
           <h4><a href="#link">Капсульные коллекции</a></h4>
         </div>
 
         <div class="offers__item offer-item offer-item--narrow">
-          <img src="img/clothes-2.png" alt="Образец одежды из каталога" width="370" height="370">
+          <picture>
+            <source type="image/webp" srcset="img/clothes-2.webp 1x, img/clothes-2@2x.webp 2x">
+            <img src="img/clothes-2.png" srcset="img/clothes-2@2x.png 2x" alt="Образец одежды из капсульной коллекции" width="370" height="370">
+          </picture>
           <h4><a href="#link">Перейти в каталог</a></h4>
         </div>
         <div class="offers__item offer-item offer-item--wide">
@@ -80,7 +95,10 @@
             <a href="news.html">Перейти к хитам продаж »</a>
           </div>
           <div class="offer-item__image">
-            <img src="img/girl-2.png" alt="Девушка в новом платье" width="325" height="368">
+            <picture>
+              <source type="image/webp" srcset="img/girl-2.webp 1x, img/girl-2@2x.webp 2x">
+              <img src="img/girl-2.png" srcset="img/girl-2@2x.png 2x" alt="Девушка в новом платье" width="325" height="368">
+            </picture>
           </div>
         </div>
       </section>
