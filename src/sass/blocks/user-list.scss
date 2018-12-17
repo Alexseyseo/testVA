@@ -1,0 +1,26 @@
+.user-list {
+  @include reset-list;
+  margin-left: auto;
+}
+
+.user-list__item {
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+  padding-top: 32px;
+  padding-bottom: 26px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a:hover,
+  a:focus {
+    opacity: 0.6;
+  }
+}
+@media (min-width: 1200px) {
+  .user-list__item {
+    margin-right: 21px;
+  }
+}

@@ -1,0 +1,131 @@
+.slider {
+  box-sizing: border-box;
+  height: 675px; // Временно для построения сеток
+  margin-bottom: 10px;
+}
+
+.slider__box {
+    position: relative;
+}
+
+.slider__content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 145px;
+}
+
+.slider__heading {
+  margin: 0;
+  margin-left: -1px;
+  margin-bottom: 24px;
+  padding: 0;
+  font-family: $font-futurapt;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 65px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.slider__heading-season {
+  display: block;
+  margin-top: -6px;
+  font-size: 69px;
+  font-weight: bold;
+  letter-spacing: -4px;
+  color: $color-ruby-red;
+}
+
+.slider__description {
+  margin: 0;
+  margin-left: -1px;
+  margin-bottom: 77px;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.slider__button {
+  position: relative;
+  display: inline-block;
+  margin-left: 1px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 41px;
+  background-color: $color-ruby-red;
+  font-family: $font-roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 1px $color-moderate-red;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 4px);
+    width: 60px;
+    height: 1px;
+    background-color: #891225;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.slider__item--one {
+  height: 675px;
+  background-color: #fffcfa;
+  background:
+    url("../img/slide-1-woman.png") no-repeat calc(50% + 322px) -1px,
+    radial-gradient(circle at calc(50% + 219px) 486px, #FAF3F3 0px, #FAF3F3 463px, transparent 463px),
+    radial-gradient(circle, transparent 0px, transparent 14px, red 14px, red 15px, transparent 15px),
+    linear-gradient(to right, transparent 0%, transparent calc(50% + 301px),#F2D6D7 calc(50% + 301px)),
+    url("../img/bg-slide-one.png") repeat;
+  border-top: 1px solid rgba(78, 10, 21, 0.15);
+}
+
+.slider__nav {
+  position: absolute;
+  left: 0;
+  bottom: 122px;
+  display: flex;
+  @include reset-list;
+
+  li {
+    margin: 0;
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 13px;
+    height: 13px;
+    font-size: 0;
+    background-color: #891225;
+    border: 4px solid #FCF7EA;
+    box-shadow: none;
+    border-radius: 50%;
+  }
+
+  .slick-active button {
+    border-color: #FCF7EA;
+    box-shadow: 0 0 0 1px #891225;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider__nav {
+    left: calc(50% - 589px);
+  }
+}

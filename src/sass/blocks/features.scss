@@ -1,0 +1,35 @@
+.features {
+  background-color: $color-bg-block;
+  padding: 80px 0;
+}
+
+.features__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.features__item {
+  padding: 35px;
+  padding-top: 34px;
+  padding-right: 40px;
+  background-color: #ffffff;
+  border-right: 1px solid $color-border-feature;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.features__image {
+  width: 40px;
+  height: 38px;
+  margin-bottom: 65px;
+}
+
+.features__description {
+  margin: 0;
+  font-family: $font-futurapt;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}

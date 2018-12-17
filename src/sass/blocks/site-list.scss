@@ -1,0 +1,29 @@
+.site-list {
+  @include reset-list;
+}
+
+.site-list__item {
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.site-list a {
+  font-family: $font-open-sans;
+  font-size: 12px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+}

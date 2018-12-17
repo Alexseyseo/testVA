@@ -1,0 +1,26 @@
+.contacts {
+  text-align: center;
+}
+
+.contacts__email {
+  margin: 0;
+  margin-left: 5px;
+  margin-bottom: 1px;
+}
+
+.contacts__phone {
+  margin: 0;
+  margin-left: 15px;
+}
+
+.contacts a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+}

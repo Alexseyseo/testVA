@@ -1,6 +1,16 @@
 /* Global styles */
 @import "base/variables.scss";
-//@import "base/mixins.scss";
+@import "base/mixins.scss";
 @import "base/fonts.scss";
 @import "base/normalize.scss";
-//@import "base/global.scss";
+@import "base/global.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/contacts.scss";
+@import "blocks/user-list.scss";
+@import "blocks/slider.scss";
+@import "blocks/offers.scss";
+@import "blocks/offer-item.scss";
+@import "blocks/features.scss";

@@ -2,40 +2,70 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MIRONI - производство и оптовая продажа женской одежды</title>
     <link rel="preload" href="fonts/futuraPTBold.woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/futuraPTDemi.woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/futuraPTMedium.woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/robotoBold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="slick/slick.min.css"/>
+    <link rel="stylesheet" href="slick/slick-theme.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__logo logo">
-        <a class="logo-link">MIRONI</a>
-      </div>
-
-      <div class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li><a href="#news-item">Новинки</a></li>
-          <li><a href="#catalog">Каталог</a></li>
-          <li><a href="#sale">Sale</a></li>
-          <li><a href="#terms-of-cooperation">Условия сотрудничества</a></li>
-          <li><a href="#shipping-payment">Доставка и оплата</a></li>
-        </ul>
-
-        <div class="contacts">
-          <p><a href="mailto:sale@mironistyle.ru">sale@mironistyle.ru</a></p>
-          <p><a href="tel:+74991234567">8 (499) 123-45-67</a></p>
+    <header class="page-header container">
+      <div class="page-header__wrapper row">
+        <div class="page-header__logo logo col-auto col-xl-3">
+          <a class="logo-link">MIRONI</a>
         </div>
-
-        <ul class="main-nav__list user-list">
-          <li><a href="search.html" title="Поиск">Поиск</a></li>
-          <li><a href="backet.html" title="Корзина">Корзина</a></li>
-          <li><a href="user.html" title="Аккаунт">Аккаунт</a></li>
-        </ul>
+        <div class="main-nav col-auto col-xl-6">
+          <ul class="main-nav__list site-list row">
+            <li class="site-list__item">
+              <a href="#news-item">Новинки</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#catalog">Каталог</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#sale">Sale</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#terms-of-cooperation">Условия сотрудничества</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#shipping-payment">Доставка и оплата</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-header__contacts contacts col-auto col-xl-auto">
+            <p class="contacts__email"><a href="mailto:sale@mironistyle.ru">sale@mironistyle.ru</a></p>
+            <p class="contacts__phone"><a href="tel:+74991234567">8 (499) 123-45-67</a></p>
+          </div>
+        <div class="main-nav col ">
+          <ul class="main-nav__list user-list row justify-content-end">
+            <li class="user-list__item">
+              <a href="search.html" title="Поиск">
+                <img src="img/ico-magnifer.svg" alt="Иконка поиска" width="16" height="18">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a href="backet.html" title="Корзина">
+                <img src="img/ico-bag.svg" alt="Иконка корзины" width="14" height="18">
+                <span class="visually-hidden">Корзина</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a href="user.html" title="Аккаунт">
+                <img src="img/ico-user.svg" alt="Иконка пользователя" width="14" height="18">
+                <span class="visually-hidden">Аккаунт</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="page-main">
@@ -43,91 +73,157 @@
 
       <section class="slider">
         <div class="slider__box">
-          <div>
-            <h2 class="slider__heading">
-              Коллекция
-              <span class="slider__heading-season">осень-зима 18-19</span>
-            </h2>
-            <p>Производство и оптовая продажа женской одежды. Качественная брендовая одежда по хорошим ценам.</p>
-            <a class="slider__button" href="catalog.html">Перейти в каталог</a>
+          <div class="slider__item slider__item--one single-item">
+            <div class="slider__content">
+              <h2 class="slider__heading">
+                Коллекция
+                <span class="slider__heading-season">Слайд 1</span>
+              </h2>
+              <p class="slider__description">Производство и оптовая продажа женской одежды.<br>Качественная брендовая одежда по хорошим ценам.</p>
+              <a class="slider__button" href="catalog.html">Перейти в каталог</a>
+            </div>
           </div>
-        </div>
-        <div class="slider__nav">
-          <!-- Здесь должны быть кнопки навигации слайдера -->
+
+          <div class="slider__item slider__item--one single-item">
+            <div class="slider__content">
+              <h2 class="slider__heading">
+                Коллекция
+                <span class="slider__heading-season">Слайд 2</span>
+              </h2>
+              <p class="slider__description">Производство и оптовая продажа женской одежды.<br>Качественная брендовая одежда по хорошим ценам.</p>
+              <a class="slider__button" href="catalog.html">Перейти в каталог</a>
+            </div>
+          </div>
+
+          <div class="slider__item slider__item--one single-item">
+            <div class="slider__content">
+              <h2 class="slider__heading">
+                Коллекция
+                <span class="slider__heading-season">осень-зима 18-19</span>
+              </h2>
+              <p class="slider__description">Производство и оптовая продажа женской одежды.<br>Качественная брендовая одежда по хорошим ценам.</p>
+              <a class="slider__button" href="catalog.html">Перейти в каталог</a>
+            </div>
+          </div>
+
+          <div class="slider__item slider__item--one single-item">
+            <div class="slider__content">
+              <h2 class="slider__heading">
+                Коллекция
+                <span class="slider__heading-season">Слайд 4</span>
+              </h2>
+              <p class="slider__description">Производство и оптовая продажа женской одежды.<br>Качественная брендовая одежда по хорошим ценам.</p>
+              <a class="slider__button" href="catalog.html">Перейти в каталог</a>
+            </div>
+          </div>
+
+          <div class="slider__item slider__item--one single-item">
+            <div class="slider__content">
+              <h2 class="slider__heading">
+                Коллекция
+                <span class="slider__heading-season">Слайд 5</span>
+              </h2>
+              <p class="slider__description">Производство и оптовая продажа женской одежды.<br>Качественная брендовая одежда по хорошим ценам.</p>
+              <a class="slider__button" href="catalog.html">Перейти в каталог</a>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="offers">
+      <section class="offers container">
         <h2 class="visually-hidden">Наши предложения</h2>
 
-        <div class="offers__item offer-item offer-item--wide">
-          <div class="offer-item__text">
-            <h3>Новинки коллекции</h3>
-            <p>Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada</p>
-            <a href="news.html">Перейти к хитам продаж »</a>
+        <div class="offers__row row">
+          <div class="offers__item offer-item col col-xl-8 row no-gutters">
+            <div class="offer-item__text col">
+              <h3 class="offer-item__heading">Новинки коллекции</h3>
+              <p class="offer-item__description">Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada</p>
+              <a class="offer-item__link" href="news.html">Перейти к хитам продаж »</a>
+            </div>
+            <div class="offer-item__image col-auto">
+              <picture>
+                <source type="image/webp" srcset="img/girl-1.webp 1x, img/girl-1@2x.webp 2x">
+                <img src="img/girl-1.png" srcset="img/girl-1@2x.png 2x" alt="Девушка в новом платье" width="325" height="368">
+              </picture>
+            </div>
           </div>
-          <div class="offer-item__image">
-            <picture>
-              <source type="image/webp" srcset="img/girl-1.webp 1x, img/girl-1@2x.webp 2x">
-              <img src="img/girl-1.png" srcset="img/girl-1@2x.png 2x" alt="Девушка в новом платье" width="325" height="368">
-            </picture>
+          <div class="offers__item offers__item--one-third offer-item col col-xl-4">
+            <div class="offer-item__image offer-item__image--red">
+              <picture>
+              <source type="image/webp" srcset="img/clothes-1.webp 1x, img/clothes-1@2x.webp 2x">
+              <img src="img/clothes-1.png" srcset="img/clothes-1@2x.png 2x" alt="Образец одежды из капсульной коллекции" width="370" height="370">
+              </picture>
+            </div>
+            <h4 class="offers-item__heading-in-picture"><a href="#link">Капсульные коллекции</a></h4>
           </div>
-        </div>
-        <div class="offers__item offer-item offer-item--narrow">
-          <picture>
-            <source type="image/webp" srcset="img/clothes-1.webp 1x, img/clothes-1@2x.webp 2x">
-            <img src="img/clothes-1.png" srcset="img/clothes-1@2x.png 2x" alt="Образец одежды из капсульной коллекции" width="370" height="370">
-          </picture>
-          <h4><a href="#link">Капсульные коллекции</a></h4>
         </div>
 
-        <div class="offers__item offer-item offer-item--narrow">
-          <picture>
-            <source type="image/webp" srcset="img/clothes-2.webp 1x, img/clothes-2@2x.webp 2x">
-            <img src="img/clothes-2.png" srcset="img/clothes-2@2x.png 2x" alt="Образец одежды из капсульной коллекции" width="370" height="370">
-          </picture>
-          <h4><a href="#link">Перейти в каталог</a></h4>
-        </div>
-        <div class="offers__item offer-item offer-item--wide">
-          <div class="offer-item__text">
-            <h3>Хиты продаж</h3>
-            <p>Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada</p>
-            <a href="news.html">Перейти к хитам продаж »</a>
-          </div>
-          <div class="offer-item__image">
+        <div class="offers__row row">
+          <div class="offers__item offers__item--one-third offer-item col col-xl-4">
             <picture>
-              <source type="image/webp" srcset="img/girl-2.webp 1x, img/girl-2@2x.webp 2x">
-              <img src="img/girl-2.png" srcset="img/girl-2@2x.png 2x" alt="Девушка в новом платье" width="325" height="368">
+              <source type="image/webp" srcset="img/clothes-2.webp 1x, img/clothes-2@2x.webp 2x">
+              <img src="img/clothes-2.png" srcset="img/clothes-2@2x.png 2x" alt="Образец одежды из капсульной коллекции" width="370" height="370">
             </picture>
+            <h4 class="offers-item__heading-in-picture"><a href="#link">Перейти в&nbsp;каталог</a></h4>
+          </div>
+          <div class="offers__item offer-item col col-xl-8 row no-gutters">
+            <div class="offer-item__text col">
+              <h3 class="offer-item__heading">Хиты продаж</h3>
+              <p class="offer-item__description">Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada</p>
+              <a class="offer-item__link" href="news.html">Перейти к хитам продаж »</a>
+            </div>
+            <div class="offer-item__image col-auto">
+              <picture>
+                <source type="image/webp" srcset="img/girl-2.webp 1x, img/girl-2@2x.webp 2x">
+                <img src="img/girl-2.png" srcset="img/girl-2@2x.png 2x" alt="Девушка в новом платье" width="325" height="368">
+              </picture>
+            </div>
           </div>
         </div>
       </section>
+
       <section class="features">
-        <div class="feature">
-          <img src="img/calendar.svg" alt="Календарь" width="40" height="38">
-          <p>Российское производство</p>
-        </div>
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <div class="features__wrapper row">
+          <div class="features__item col">
+            <img class="features__image" src="img/calendar.svg" alt="Календарь" width="40" height="38">
+            <p class="features__description">Российское производство</p>
+          </div>
 
-        <div class="feature">
-          <img src="img/calendar.svg" alt="Календарь" width="40" height="38">
-          <p>Еженедельное обновление</p>
-        </div>
+          <div class="features__item col">
+            <img class="features__image" src="img/calendar.svg" alt="Календарь" width="40" height="38">
+            <p class="features__description">Еженедельное обновление</p>
+          </div>
 
-        <div class="feature">
-          <img src="img/calendar.svg" alt="Календарь" width="40" height="38">
-          <p>Широкий размерный ряд</p>
-        </div>
+          <div class="features__item col">
+            <img class="features__image" src="img/calendar.svg" alt="Календарь" width="40" height="38">
+            <p class="features__description">Широкий размерный ряд</p>
+          </div>
 
-        <div class="feature">
-          <img src="img/calendar.svg" alt="Календарь" width="40" height="38">
-          <p>Натуральные ткани</p>
-        </div>
+          <div class="features__item col">
+            <img class="features__image" src="img/calendar.svg" alt="Календарь" width="40" height="38">
+            <p class="features__description">Натуральные ткани</p>
+          </div>
 
-        <div class="feature">
-          <img src="img/calendar.svg" alt="Календарь" width="40" height="38">
-          <p>Оперативная доставка</p>
+          <div class="features__item col">
+            <img class="features__image" src="img/calendar.svg" alt="Календарь" width="40" height="38">
+            <p class="features__description">Оперативная доставка</p>
+          </div>
         </div>
       </section>
     </main>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider__box').slick({
+        arrows: false,
+        dots: true,
+        dotsClass: "slider__nav",
+        initialSlide: 2
+      });
+    });
+  </script>
   </body>
 </html>
